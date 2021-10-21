@@ -31,37 +31,37 @@ namespace NFTArtGenerator
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtOrder = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtInputFolder = new System.Windows.Forms.TextBox();
-            this.btnAddLayer = new System.Windows.Forms.Button();
-            this.clbLayers = new System.Windows.Forms.CheckedListBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtOutputFolder = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnOpenInputFolder = new System.Windows.Forms.Button();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnOpenOutputFolder = new System.Windows.Forms.Button();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.txtOutputFolder = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnOpenInputFolder = new System.Windows.Forms.Button();
+            this.clbLayers = new System.Windows.Forms.CheckedListBox();
+            this.btnAddLayer = new System.Windows.Forms.Button();
+            this.txtInputFolder = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtOrder = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnGenerate = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -84,6 +84,30 @@ namespace NFTArtGenerator
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.newToolStripMenuItem.Text = "New";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(95, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.toolStripMenuItem1.Text = "Help";
             // 
             // tabControl1
             // 
@@ -108,31 +132,44 @@ namespace NFTArtGenerator
             this.tabPage1.Text = "Art Arrangement";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // groupBox2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 524);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "NFT Configuration";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.groupBox2.Controls.Add(this.btnOpenOutputFolder);
+            this.groupBox2.Controls.Add(this.txtOutputFolder);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(6, 418);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(756, 100);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Output";
             // 
-            // statusStrip1
+            // btnOpenOutputFolder
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 582);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
+            this.btnOpenOutputFolder.Location = new System.Drawing.Point(721, 27);
+            this.btnOpenOutputFolder.Name = "btnOpenOutputFolder";
+            this.btnOpenOutputFolder.Size = new System.Drawing.Size(29, 23);
+            this.btnOpenOutputFolder.TabIndex = 7;
+            this.btnOpenOutputFolder.Text = "...";
+            this.btnOpenOutputFolder.UseVisualStyleBackColor = true;
+            this.btnOpenOutputFolder.Click += new System.EventHandler(this.btnOpenOutputFolder_Click);
             // 
-            // toolStripStatusLabel1
+            // txtOutputFolder
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.txtOutputFolder.Enabled = false;
+            this.txtOutputFolder.Location = new System.Drawing.Point(115, 27);
+            this.txtOutputFolder.Name = "txtOutputFolder";
+            this.txtOutputFolder.Size = new System.Drawing.Size(600, 23);
+            this.txtOutputFolder.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Output Folder Path";
             // 
             // groupBox1
             // 
@@ -150,37 +187,24 @@ namespace NFTArtGenerator
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Input ";
             // 
-            // label2
+            // btnOpenInputFolder
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Order #";
+            this.btnOpenInputFolder.Location = new System.Drawing.Point(721, 52);
+            this.btnOpenInputFolder.Name = "btnOpenInputFolder";
+            this.btnOpenInputFolder.Size = new System.Drawing.Size(29, 23);
+            this.btnOpenInputFolder.TabIndex = 6;
+            this.btnOpenInputFolder.Text = "...";
+            this.btnOpenInputFolder.UseVisualStyleBackColor = true;
+            this.btnOpenInputFolder.Click += new System.EventHandler(this.btnOpenInputFolder_Click);
             // 
-            // txtOrder
+            // clbLayers
             // 
-            this.txtOrder.Location = new System.Drawing.Point(115, 23);
-            this.txtOrder.Name = "txtOrder";
-            this.txtOrder.Size = new System.Drawing.Size(100, 23);
-            this.txtOrder.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Layer Folder Path";
-            // 
-            // txtInputFolder
-            // 
-            this.txtInputFolder.Location = new System.Drawing.Point(115, 52);
-            this.txtInputFolder.Name = "txtInputFolder";
-            this.txtInputFolder.Size = new System.Drawing.Size(600, 23);
-            this.txtInputFolder.TabIndex = 3;
+            this.clbLayers.CheckOnClick = true;
+            this.clbLayers.FormattingEnabled = true;
+            this.clbLayers.Location = new System.Drawing.Point(6, 110);
+            this.clbLayers.Name = "clbLayers";
+            this.clbLayers.Size = new System.Drawing.Size(744, 292);
+            this.clbLayers.TabIndex = 5;
             // 
             // btnAddLayer
             // 
@@ -192,85 +216,48 @@ namespace NFTArtGenerator
             this.btnAddLayer.UseVisualStyleBackColor = true;
             this.btnAddLayer.Click += new System.EventHandler(this.btnAddLayer_Click);
             // 
-            // clbLayers
+            // txtInputFolder
             // 
-            this.clbLayers.FormattingEnabled = true;
-            this.clbLayers.Location = new System.Drawing.Point(6, 110);
-            this.clbLayers.Name = "clbLayers";
-            this.clbLayers.Size = new System.Drawing.Size(744, 292);
-            this.clbLayers.TabIndex = 5;
+            this.txtInputFolder.Enabled = false;
+            this.txtInputFolder.Location = new System.Drawing.Point(115, 52);
+            this.txtInputFolder.Name = "txtInputFolder";
+            this.txtInputFolder.Size = new System.Drawing.Size(600, 23);
+            this.txtInputFolder.TabIndex = 3;
             // 
-            // groupBox2
+            // label3
             // 
-            this.groupBox2.Controls.Add(this.btnOpenOutputFolder);
-            this.groupBox2.Controls.Add(this.txtOutputFolder);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(6, 418);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(756, 100);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Output";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Layer Folder Path";
             // 
-            // txtOutputFolder
+            // txtOrder
             // 
-            this.txtOutputFolder.Location = new System.Drawing.Point(115, 27);
-            this.txtOutputFolder.Name = "txtOutputFolder";
-            this.txtOutputFolder.Size = new System.Drawing.Size(600, 23);
-            this.txtOutputFolder.TabIndex = 5;
+            this.txtOrder.Location = new System.Drawing.Point(115, 23);
+            this.txtOrder.Name = "txtOrder";
+            this.txtOrder.Size = new System.Drawing.Size(100, 23);
+            this.txtOrder.TabIndex = 1;
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 15);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Output Folder Path";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Order #";
             // 
-            // newToolStripMenuItem
+            // tabPage2
             // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newToolStripMenuItem.Text = "New";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
-            this.toolStripMenuItem1.Text = "Help";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // btnOpenInputFolder
-            // 
-            this.btnOpenInputFolder.Location = new System.Drawing.Point(721, 52);
-            this.btnOpenInputFolder.Name = "btnOpenInputFolder";
-            this.btnOpenInputFolder.Size = new System.Drawing.Size(29, 23);
-            this.btnOpenInputFolder.TabIndex = 6;
-            this.btnOpenInputFolder.Text = "...";
-            this.btnOpenInputFolder.UseVisualStyleBackColor = true;
-            this.btnOpenInputFolder.Click += new System.EventHandler(this.btnOpenInputFolder_Click);
-            // 
-            // btnOpenOutputFolder
-            // 
-            this.btnOpenOutputFolder.Location = new System.Drawing.Point(721, 27);
-            this.btnOpenOutputFolder.Name = "btnOpenOutputFolder";
-            this.btnOpenOutputFolder.Size = new System.Drawing.Size(29, 23);
-            this.btnOpenOutputFolder.TabIndex = 7;
-            this.btnOpenOutputFolder.Text = "...";
-            this.btnOpenOutputFolder.UseVisualStyleBackColor = true;
-            this.btnOpenOutputFolder.Click += new System.EventHandler(this.btnOpenOutputFolder_Click);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(768, 524);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "NFT Configuration";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
@@ -284,13 +271,29 @@ namespace NFTArtGenerator
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(126, 79);
+            this.btnGenerate.Location = new System.Drawing.Point(326, 221);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(75, 23);
             this.btnGenerate.TabIndex = 0;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 582);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // Form1
             // 
@@ -301,19 +304,20 @@ namespace NFTArtGenerator
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "NFT Art Generator";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

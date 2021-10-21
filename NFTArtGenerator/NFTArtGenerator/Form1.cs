@@ -128,5 +128,9 @@ namespace NFTArtGenerator
                 throw;
             }
         }
+
+        #region helpers
+        
+        #endregion
     }
 }
